@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+</head>
+
+<body>
+    <div id="menu" data-role="page" data-title="menu" data-theme="a">
+
+        <div id="header" data-role="header" data-position="fixed">
+
+            <h4>Menu</h4>
+        </div>
+
+        <div id="content2" data-role="content">
+
+            <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+                <div data-role="collapsible">
+                    <h3>Display Balance</h3>
+                    <p>Your current blance is:</p>
+                    <p id="test"></p>
+                </div>
+            </div>
+            <div data-role="collapsible">
+                <h3>Add Funds</h3>
+                <label for="">Desposit:</label>
+                <input type="text" name="text1" id="deposit">
+                <p id="confirmDeposit"></p>
+                <button class="ui-btn" onclick="addFund()">Confirm</button>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Withdraw Funds</h3>
+                <label for="">Withdrawal amount:</label>
+                <input type="text" name="text1" id="withdrawNum">
+                <p id="confirmWithdraw"></p>
+                <button class="ui-btn" onclick="withdraw()">Confirm</button>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Exit</h3>
+
+                <p>Are you sure you want to Exit</p>
+                <a href="index.html" class="ui-btn">Exit</a>
+            </div>
+
+        </div>
+
+
+        <div id="footer" data-role="footer" data-position="fixed">
+            <h2>Footer Main Page</h2>
+
+        </div>
+    </div>
+
+    
+    <script src="/js/menu.js"></script> 
+</body>
+
+
+</html>
